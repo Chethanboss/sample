@@ -1,0 +1,57 @@
+<!doctype html>
+<body bag colour="skyblue">
+<center<h1>My study time table</center>
+<center>
+<table border=5px bg colour="red"height=400px width=800px>
+     <tr>
+         <th>days</th>
+         <th>morning hours</th>
+         <th>morning subject</th>
+         <th>evening hours</th>
+         <th>evening subject</th>
+     </tr>
+     
+     <tr>
+         <td>Monday</td>
+         <td>1 hour</td>
+         <td>c++</td>
+         <td>3 hours</td>
+         <td>PCH</td>
+         <td>
+     </tr>
+     
+     <tr>
+         <td>Tuesday</td>
+         <td>1 hours</td>
+         <td>RDBMS</td>
+         <td>3 hours</td>
+         <td>BCN</td>
+     </tr>
+
+     <tr>
+         <td>Wednesday</td>
+         <td>1 hour</td>
+         <td>DSC</td>
+         <td>3 hours</td>
+         <td>C++</td>
+     </tr>
+     
+     <tr>
+         <td>Thursday</td>
+         <td>PCH</td>
+         <td>English</td>
+         <td>3 hours</td>
+         <td>DSC</td>
+     </tr>
+      
+     <tr>
+         <td>Friday</td>
+         <td>BCN</td>
+         <td>English</td>
+         <td>3 hours</td>
+         <td>RDBMS</td>
+     </tr>
+</table>
+</center>
+</body>
+</html>
