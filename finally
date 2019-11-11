@@ -1,0 +1,27 @@
+
+import java.io.*;
+class FinallyBlockDemo
+{
+        public static void main(String[] args) throws IOException
+        {
+			BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
+            int a,b,rs=0;
+			System.out.print("\nEnter A Value = ");
+			a=Integer.parseInt(br.readLine());
+			System.out.print("\nEnter B Value = ");
+			b=Integer.parseInt(br.readLine());
+            try
+            {
+                rs = a / b;
+            }
+            catch(ArithmeticException Ex)
+            {
+                System.out.print("\n\tError : " + Ex.getMessage());
+            }
+            finally
+            {
+                System.out.print("\n\tThe result is : " + rs);
+            }
+            System.out.print("\n");
+        }
+    }
