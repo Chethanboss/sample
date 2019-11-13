@@ -1,0 +1,25 @@
+import java.util.*;
+
+public class CollectionSorting
+{
+    public static void main(String[] args)
+    {
+        ArrayList<Integer> al = new ArrayList<Integer>();
+        al.add(67);
+        al.add(23);
+        al.add(87);
+        al.add(16);
+        al.add(98);
+		al.add(43);
+		al.add(55);
+		System.out.println("List without sort         " +al);
+
+        Collections.sort(al, Collections.reverseOrder());
+        System.out.println("List after reverse sort   "+ al);
+     		Collections.sort(al);
+
+     		System.out.println("List after Ascending sort " + al);
+
+
+    }
+}
