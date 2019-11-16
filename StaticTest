@@ -1,0 +1,34 @@
+
+import java.io.*;
+class StaticTest
+{
+
+	void nonStaticMethod()
+	{
+		System.out.println(" Non Static Method");
+	}
+	static void staticMethod()
+	{
+			System.out.println(" Static Method");
+	}
+	static
+	{
+		System.out.println(" Static Block 1");
+	}
+	static
+	{
+		System.out.println(" Static Block 2");
+	}
+	static
+	{
+		System.out.println(" Static Block 3");
+	}
+	public static void main(String args[])
+	{
+		System.out.println(" Main Block ");
+		staticMethod();
+		StaticTest ob= new StaticTest();
+		ob.nonStaticMethod();
+
+	}
+}
