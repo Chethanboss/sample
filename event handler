@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript addEventListener()</h2>
+
+<p>The addEventListener() method is not supported Internet Explorer .</p>
+
+
+<button id="myBtn">Try it</button>
+
+<script>
+var x = document.getElementById("myBtn");
+if (x.addEventListener) {
+    x.addEventListener("click", myFunction);
+} else if (x.attachEvent) {
+    x.attachEvent("onclick", myFunction);
+}
+
+function myFunction() {
+    alert("Hii mam im your trainee for the weekend project no.4");
+}
+</script>
+
+</body>
+</html>
