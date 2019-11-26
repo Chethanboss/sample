@@ -1,0 +1,15 @@
+import java.awt.*;
+public class ButtonExampleSetBounds {
+public static void main(String[] args) {
+    Frame f=new Frame("Button Example");
+    TextArea ta= new TextArea("Type here");
+    Button b=new Button("Click Here");
+    ta.setBounds(10,10,500,500);
+    b.setBounds(150,200,150,70);
+    f.add(b);
+    f.add(ta);
+    f.setSize(400,400);
+    f.setLayout(null);
+    f.setVisible(true);
+}
+}
