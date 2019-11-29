@@ -1,0 +1,46 @@
+
+import java.io.*;
+
+interface Printable
+{
+	abstract public void print();
+	abstract public void show();
+}
+
+interface Drawable
+{
+	public void draw();
+	public void sketch();
+
+}
+
+class InterfaceTest implements Printable,Drawable
+{
+	public void print()
+	{
+		System.out.println(" Print Method from Printable Interface implmentation");
+	}
+		public void show()
+		{
+			System.out.println(" Show Method from Printable Interface implmentation");
+		}
+	public void draw()
+	{
+		System.out.println(" Draw Method from Drawable Interface implmentation");
+	}
+	public void sketch(){
+		System.out.println(" Sketch Method from Drawable Interface implmentation");
+		}
+
+
+
+	public static void main(String args[])
+	{
+		InterfaceTest ob=new InterfaceTest();
+		ob.print();
+		ob.show();
+		ob.draw();
+		ob.sketch();
+
+	}
+}
