@@ -1,0 +1,41 @@
+
+import java.io.*;
+interface Mouse
+{
+	abstract public void mouseClick();
+	abstract public void mouseReleased();
+}
+interface Keyboard
+{
+	abstract public void keyPressed();
+	abstract public void keyReleased();
+}
+
+class UseMouseKeyboard implements Mouse,Keyboard
+{
+	public void mouseClick()
+	{
+		System.out.println(" Mouse Clicked ...");
+	}
+	public void mouseReleased()
+	{
+		System.out.println(" Mouse Relesed ...");
+	}
+	public void keyPressed()
+	{
+		System.out.println(" Key Pressed ...");
+	}
+	public void keyReleased()
+	{
+		System.out.println(" Key Released ...");
+	}
+	public static void main(String args[])
+	{
+		UseMouseKeyboard mk= new UseMouseKeyboard();
+		mk.mouseClick();
+		mk.mouseReleased();
+		mk.keyPressed();
+		mk.keyReleased();
+
+	}
+}
