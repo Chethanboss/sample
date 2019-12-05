@@ -1,0 +1,42 @@
+import java.io.*;
+abstract class Bike
+{
+	public void speed(){}
+}
+class Honda extends Bike
+{
+	public void speed()
+	{
+		System.out.println("\n The Speed of Honda Bike is 140 km/h ");
+	}
+}
+class TVS extends Bike
+{
+	public void speed()
+	{
+		System.out.println("\n The Speed of TVS Bike is 120 km/h ");
+	}
+}
+class Yamaha extends Bike
+{
+	public void speed()
+	{
+		System.out.println("\n The Speed of Yamaha Bike is 160 km/h ");
+	}
+}
+
+
+class MainClass
+{
+	public static void main(String args[])
+	{
+
+		Bike h=new Honda();
+		Bike t=new TVS();
+		Bike y=new Yamaha();
+
+		h.speed();
+		t.speed();
+		y.speed();
+	}
+}
