@@ -1,0 +1,14 @@
+
+
+class Binary
+{
+	public static void main(String args[])
+	{
+		int n=-483;
+		System.out.println(" binary  5            = "+Integer.toBinaryString(n));
+		System.out.println(" binary  -5           = "+Integer.toBinaryString(-5));
+		System.out.println(" binary  -5>>16       = "+Integer.toBinaryString(-5>>16));
+		System.out.println(" binary  -5>>>16      = "+Integer.toBinaryString(-5>>>16));
+		System.out.println(" binary  -5<<16       = "+Integer.toBinaryString(-5<<16));
+	}
+}
